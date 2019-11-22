@@ -85,6 +85,11 @@ class App extends React.Component {
               width: 100
             },
             {
+              Header: "TYPE",
+              accessor: "TYPE",
+              width: 100
+            },
+            {
               Header: "LANG",
               accessor: "LANG",
               width: 100

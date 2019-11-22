@@ -2,6 +2,7 @@ export default [
   {
     "HARD-SOFT": "HARDWARE",
     TECHNO: "FPGA",
+    TYPE: "Attestation",
     LANG: "Allemand",
     ORG: "Uni-KL",
     LIBELLE: "FPGA--",
@@ -10,6 +11,7 @@ export default [
   {
     "HARD-SOFT": "SOFTWARE",
     TECHNO: "DBase",
+    TYPE: "Certificat",
     LANG: "Indonesian",
     ORG: "Purwadhika",
     LIBELLE: "qsdfqs",
@@ -18,6 +20,7 @@ export default [
   {
     "HARD-SOFT": "SOFTWARE",
     TECHNO: "Python",
+    TYPE: "Certificat",
     LANG: "Française",
     ORG: "MOOC",
     LIBELLE: "Apprendre à coder avec Python",
