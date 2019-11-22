@@ -5,7 +5,7 @@ import { render } from "react-dom";
 import ReactTable from "react-table";
 import "react-table/react-table.css";
 import testData from "./test_data";
-import Modal from 'react-awesome-modal';
+import Modal from "react-awesome-modal";
 
 function getData() {
   const data = testData.map(item => {
@@ -28,8 +28,8 @@ function getColumns(data) {
         accessor: key,
         Header: key
       });
-    } else if(key === "Cert"){
-columns.push({
+    } else if (key === "Cert") {
+      columns.push({
         accessor: key,
         Header: key,
         Cell: ({ row }) => (
@@ -37,11 +37,8 @@ columns.push({
             Click Me
           </button>
         )
-
-       
-       
       });
-}
+    }
   });
   return columns;
 }
@@ -54,32 +51,28 @@ class App extends React.Component {
     this.state = {
       data,
       columns,
-      visible : false  
+      visible: false
     };
   }
 
+  closeModal() {
+    this.setState({
+      visible: false
+    });
+  }
 
+  handleButtonClick = (e, row) => {
+    this.setState({ visible: true, LinkName: row.original.Cert });
+  };
 
+  render() {
+    const { data, columns } = this.state;
 
-    closeModal() {
-        this.setState({
-            visible : false
-        });
-    }
-
-    handleButtonClick = (e, row) => {
-      this.setState({ visible: true,  LinkName: row.original.Cert});
-    };
- 
-
-  render() {   
-    const { data, columns} = this.state;
-    
     return (
-      <div>        
-        <ReactTable         
+      <div>
+        <ReactTable
           data={data}
-          //columns={columns}         
+          //columns={columns}
           columns={[
             {
               Header: "HARD-SOFT",
@@ -110,40 +103,33 @@ class App extends React.Component {
               Header: "",
               id: "Cert",
               accessor: "Cert",
-              Cell:  (rowInfo)  => (
+              Cell: rowInfo => (
                 <button onClick={e => this.handleButtonClick(e, rowInfo)}>
-                {rowInfo.original.Cert}
+                  click Moi
                 </button>
               )
-
-             
             }
           ]}
-
           defaultPageSize={10}
-          className="-striped -highlight"  
-          filterable = "true"  
-          
+          className="-striped -highlight"
+          filterable="true"
         />
-                <Modal 
-                    visible={this.state.visible}
-                    width="400"
-                    height="300"
-                    effect="fadeInUp"
-                    onClickAway={() => this.closeModal()}
-                >
-                    <div>
-                       <img src={"./img/" + this.state.LinkName} />
-                        <p>{"./img/" + this.state.LinkName}</p>
-                        <a href="javascript:void(0);" onClick={() => this.closeModal()}>Close</a>
-                    </div>
-                </Modal>
-           
+        <Modal
+          visible={this.state.visible}
+          width="400"
+          height="300"
+          effect="fadeInUp"
+          onClickAway={() => this.closeModal()}
+        >
+          <div>
+            <img src={"/img/" + this.state.LinkName} alt="Houston We have pb" />
 
-               
+            <a href="javascript:void(0);" onClick={() => this.closeModal()}>
+              Close
+            </a>
+          </div>
+        </Modal>
       </div>
-
-      
     );
   }
 }
