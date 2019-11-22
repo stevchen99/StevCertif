@@ -7,6 +7,7 @@ export default [
     QUAND: "2001",
     ORG: "Uni-KL",
     LIBELLE: "FPGA--",
+    DESCRIPTION: "",
     Cert: "image1.PNG"
   },
   {
@@ -17,6 +18,7 @@ export default [
     QUAND: "2001",
     ORG: "Purwadhika",
     LIBELLE: "qsdfqs",
+    DESCRIPTION: "",
     Cert: "defvest.PNG"
   },
   {
@@ -27,6 +29,7 @@ export default [
     QUAND: "2019",
     ORG: "MOOC",
     LIBELLE: "Apprendre à coder avec Python",
+    DESCRIPTION: "Utilise Python 3 comme clé pour vous ouvrir la porte de cette connaissance informatique.",
     Cert: "Python1.PNG"
   }
 ];

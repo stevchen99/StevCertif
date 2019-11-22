@@ -110,6 +110,11 @@ class App extends React.Component {
               width: 300
             },
             {
+              Header: "DESCRIPTION",
+              accessor: "DESCRIPTION",
+              width: 600
+            },
+            {
               Header: "",
               id: "Cert",
               accessor: "Cert",
