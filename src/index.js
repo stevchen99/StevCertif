@@ -95,6 +95,11 @@ class App extends React.Component {
               width: 100
             },
             {
+              Header: "QUAND",
+              accessor: "QUAND",
+              width: 100
+            },
+            {
               Header: "ORG",
               accessor: "ORG",
               width: 100

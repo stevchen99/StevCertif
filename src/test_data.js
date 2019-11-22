@@ -4,6 +4,7 @@ export default [
     TECHNO: "FPGA",
     TYPE: "Attestation",
     LANG: "Allemand",
+    QUAND: "2001",
     ORG: "Uni-KL",
     LIBELLE: "FPGA--",
     Cert: "image1.PNG"
@@ -13,6 +14,7 @@ export default [
     TECHNO: "DBase",
     TYPE: "Certificat",
     LANG: "Indonesian",
+    QUAND: "2001",
     ORG: "Purwadhika",
     LIBELLE: "qsdfqs",
     Cert: "defvest.PNG"
@@ -22,6 +24,7 @@ export default [
     TECHNO: "Python",
     TYPE: "Certificat",
     LANG: "Française",
+    QUAND: "2019",
     ORG: "MOOC",
     LIBELLE: "Apprendre à coder avec Python",
     Cert: "Python1.PNG"
