@@ -1,0 +1,13 @@
+{
+  "name": "stev-yo",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "index.js",
+  "dependencies": {
+    "react": "15.5.3",
+    "react-awesome-modal": "2.0.5",
+    "react-dom": "15.5.3",
+    "react-table": "6.7.5"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "stev-yo",
+  "version": "0.0.3",
+  "description": "",
+  "keywords": [],
+  "main": "index.js",
+  "dependencies": {
+    "react": "15.5.3",
+    "react-awesome-modal": "2.0.5",
+    "react-dom": "15.5.3",
+    "react-table": "6.7.5"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
