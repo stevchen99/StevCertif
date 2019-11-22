@@ -97,7 +97,7 @@ class App extends React.Component {
             {
               Header: "QUAND",
               accessor: "QUAND",
-              width: 100
+              width: 70
             },
             {
               Header: "ORG",
@@ -112,7 +112,7 @@ class App extends React.Component {
             {
               Header: "DESCRIPTION",
               accessor: "DESCRIPTION",
-              width: 600
+              width: 500
             },
             {
               Header: "",
@@ -137,7 +137,12 @@ class App extends React.Component {
           onClickAway={() => this.closeModal()}
         >
           <div>
-            <img src={"/img/" + this.state.LinkName} width="600" height="400"alt="Houston We have pb" />
+            <img
+              src={"/img/" + this.state.LinkName}
+              width="600"
+              height="400"
+              alt="Houston We have pb"
+            />
 
             <a href="javascript:void(0);" onClick={() => this.closeModal()}>
               Close
