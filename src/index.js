@@ -116,13 +116,13 @@ class App extends React.Component {
         />
         <Modal
           visible={this.state.visible}
-          width="400"
-          height="300"
+          width="300"
+          height="200"
           effect="fadeInUp"
           onClickAway={() => this.closeModal()}
         >
           <div>
-            <img src={"/img/" + this.state.LinkName} alt="Houston We have pb" />
+            <img src={"/img/" + this.state.LinkName} width="600" height="400"alt="Houston We have pb" />
 
             <a href="javascript:void(0);" onClick={() => this.closeModal()}>
               Close
