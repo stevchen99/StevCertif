@@ -61,14 +61,21 @@ class App extends React.Component {
     });
   }
 
-  handleButtonClick = (e, row) => {
-    this.setState({ visible: true, LinkName: row.original.Cert });
+
+
+  handleButtonClick = (e, row) => { 
+    var bild = new Image();
+    bild.src = "/img/" + row.original.Cert;
+    var Pos = bild.width > bild.height ? "Land" : "Port";
+    this.setState({ visible: true, LinkName: row.original.Cert, ThePos: Pos });
   };
 
   render() {
+    console.log({ state: this.state });
     const { data, columns } = this.state;
 
     return (
+     
       <div>
         <ReactTable
           data={data}
@@ -130,17 +137,18 @@ class App extends React.Component {
           filterable="true"
         />
         <Modal
+        
           visible={this.state.visible}
-          width="300"
-          height="200"
+          width={this.state.ThePos === "Land" ? "600" : "400"}
+          height={this.state.ThePos === "Port" ? "400" : "600"}
           effect="fadeInUp"
           onClickAway={() => this.closeModal()}
         >
           <div>
             <img
               src={"/img/" + this.state.LinkName}
-              width="600"
-              height="400"
+              width={this.state.ThePos === "Land" ? "600" : "400"}
+              height={this.state.ThePos === "Port" ? "400" : "600"}
               alt="Houston We have pb"
             />
 

@@ -8,7 +8,7 @@ export default [
     ORG: "Uni-KL",
     LIBELLE: "Satelite Radio System",
     DESCRIPTION: "Turbo Decoder avec FPGA",
-    Cert: "ZMK.PNG"
+    Cert: "ZMK.jpg"
   },
   {
     "HARD-SOFT": "SOFTWARE",
