@@ -19,7 +19,7 @@ export default [
     ORG: "Cytexx",
     LIBELLE: "Dev Web",
     DESCRIPTION: "Création site Internet",
-    Cert: "Cytexx.PNG"
+    Cert: "Cytexx.jpg"
   },
   {
     "HARD-SOFT": "SOFTWARE",
@@ -30,7 +30,7 @@ export default [
     ORG: "1Plus",
     LIBELLE: "Dev Web",
     DESCRIPTION: "Responsable Informatique TPE",
-    Cert: "OnePlus.PNG"
+    Cert: "OnePlus.jpg"
   },
   {
     "HARD-SOFT": "SOFTWARE",

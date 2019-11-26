@@ -1,11 +1,14 @@
 import React from "react";
 import { render } from "react-dom";
 
+
 // Import React Table
 import ReactTable from "react-table";
 import "react-table/react-table.css";
 import testData from "./test_data";
 import Modal from "react-awesome-modal";
+
+
 
 function getData() {
   const data = testData.map(item => {
@@ -64,16 +67,16 @@ class App extends React.Component {
 
 
   handleButtonClick = (e, row) => { 
+    
     var bild = new Image();
-    bild.src = "/img/" + row.original.Cert;
-    var Pos = bild.width > bild.height ? "Land" : "Port";
-    this.setState({ visible: true, LinkName: row.original.Cert, ThePos: Pos });
+    bild.src = "/img/" + row.original.Cert;   
+    bild.onload = () =>   
+    this.setState({ visible: true, LinkName: row.original.Cert, BildW: bild.width, BildH : bild.height, ThePos: bild.width > bild.height ? "Land" : "Port" });       
   };
 
   render() {
     console.log({ state: this.state });
-    const { data, columns } = this.state;
-
+    const { data } = this.state;
     return (
      
       <div>
@@ -139,16 +142,16 @@ class App extends React.Component {
         <Modal
         
           visible={this.state.visible}
-          width={this.state.ThePos === "Land" ? "600" : "400"}
-          height={this.state.ThePos === "Port" ? "400" : "600"}
+        
           effect="fadeInUp"
           onClickAway={() => this.closeModal()}
         >
           <div>
             <img
               src={"/img/" + this.state.LinkName}
-              width={this.state.ThePos === "Land" ? "600" : "400"}
-              height={this.state.ThePos === "Port" ? "400" : "600"}
+              width={this.state.BildW}
+              height={this.state.BildH}
+              
               alt="Houston We have pb"
             />
 
