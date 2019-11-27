@@ -36,10 +36,10 @@ export default [
     "HARD-SOFT": "SOFTWARE",
     TECHNO: "ITIL",
     TYPE: "Attestation",
-    LANG: "Française",
+    LANG: "Française", 
     QUAND: "2019",
     ORG: "CNAM",
-    LIBELLE: "NFE 115", 
+    LIBELLE: "NFE 115",  
     DESCRIPTION: "ITIL et Gestion SI",
     Cert: "Itil.jpg"
   },
