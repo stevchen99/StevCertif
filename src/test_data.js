@@ -14,7 +14,7 @@ export default [
     "HARD-SOFT": "SOFTWARE",
     TECHNO: "PHP",
     TYPE: "Attestation",
-    LANG: "Allemand",
+    LANG: "Allemande",
     QUAND: "2000",
     ORG: "Cytexx",
     LIBELLE: "Dev Web",
@@ -25,12 +25,23 @@ export default [
     "HARD-SOFT": "SOFTWARE",
     TECHNO: "PHP",
     TYPE: "Attestation",
-    LANG: "Allemand",
+    LANG: "Allemande",
     QUAND: "2000",
     ORG: "1Plus",
     LIBELLE: "Dev Web",
     DESCRIPTION: "Responsable Informatique TPE",
     Cert: "OnePlus.jpg"
+  },
+  {
+    "HARD-SOFT": "SOFTWARE",
+    TECHNO: "ITIL",
+    TYPE: "Attestation",
+    LANG: "Française",
+    QUAND: "2019",
+    ORG: "CNAM",
+    LIBELLE: "NFE 115",
+    DESCRIPTION: "ITIL et Gestion SI",
+    Cert: "Itil.jpg"
   },
   {
     "HARD-SOFT": "SOFTWARE",
