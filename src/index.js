@@ -1,20 +1,14 @@
 import React from "react";
 import { render } from "react-dom";
 
-
 // Import React Table
 import ReactTable from "react-table";
 import "react-table/react-table.css";
 import testData from "./test_data";
 import Modal from "react-awesome-modal";
 
-
-
 function getData() {
   const data = testData.map(item => {
-    // using chancejs to generate guid
-    // shortid is probably better but seems to have performance issues
-    // on codesandbox.io
     return {
       ...item
     };
@@ -64,21 +58,23 @@ class App extends React.Component {
     });
   }
 
-
-
-  handleButtonClick = (e, row) => { 
-    
+  handleButtonClick = (e, row) => {
     var bild = new Image();
-    bild.src = "/img/" + row.original.Cert;   
-    bild.onload = () =>   
-    this.setState({ visible: true, LinkName: row.original.Cert, BildW: bild.width, BildH : bild.height, ThePos: bild.width > bild.height ? "Land" : "Port" });       
+    bild.src = "/img/" + row.original.Cert;
+    bild.onload = () =>
+      this.setState({
+        visible: true,
+        LinkName: row.original.Cert,
+        BildW: bild.width,
+        BildH: bild.height,
+        ThePos: bild.width > bild.height ? "Land" : "Port"
+      });
   };
 
   render() {
     console.log({ state: this.state });
     const { data } = this.state;
     return (
-     
       <div>
         <ReactTable
           data={data}
@@ -140,9 +136,7 @@ class App extends React.Component {
           filterable="true"
         />
         <Modal
-        
           visible={this.state.visible}
-        
           effect="fadeInUp"
           onClickAway={() => this.closeModal()}
         >
@@ -151,7 +145,6 @@ class App extends React.Component {
               src={"/img/" + this.state.LinkName}
               width={this.state.BildW}
               height={this.state.BildH}
-              
               alt="Houston We have pb"
             />
 
