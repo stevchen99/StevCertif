@@ -34,14 +34,80 @@ export default [
   },
   {
     "HARD-SOFT": "SOFTWARE",
+    TECHNO: "Generale",
+    TYPE: "Certificat",
+    LANG: "Française",
+    QUAND: "2011",
+    ORG: "CNAM",
+    LIBELLE: "Compet",
+    DESCRIPTION: "maîtrise d'ouvrage des systèmes d'information",
+    Cert: "Compet.jpg"
+  },
+  {
+    "HARD-SOFT": "SOFTWARE",
+    TECHNO: "Java",
+    TYPE: "Attestation",
+    LANG: "Française",
+    QUAND: "2008",
+    ORG: "CNAM",
+    LIBELLE: "NFA 001",
+    DESCRIPTION: "Algoritmique et programmation avec Java",
+    Cert: "NFA001.jpg"
+  },
+  {
+    "HARD-SOFT": "SOFTWARE",
+    TECHNO: "Java",
+    TYPE: "Attestation",
+    LANG: "Française",
+    QUAND: "2008",
+    ORG: "CNAM",
+    LIBELLE: "NFA 002",
+    DESCRIPTION: "Algoritmique et programmation avec Java 2",
+    Cert: "NFA002.jpg"
+  },
+  {
+    "HARD-SOFT": "SOFTWARE",
+    TECHNO: "Java",
+    TYPE: "Attestation",
+    LANG: "Française",
+    QUAND: "2008",
+    ORG: "CNAM",
+    LIBELLE: "NFA 005",
+    DESCRIPTION: "Algoritmique et programmation avec Java 3",
+    Cert: "NFA005.jpg"
+  },
+  {
+    "HARD-SOFT": "SOFTWARE",
+    TECHNO: "Java",
+    TYPE: "Attestation",
+    LANG: "Française",
+    QUAND: "2008",
+    ORG: "CNAM",
+    LIBELLE: "NFA 019",
+    DESCRIPTION: "Projet systèmes d'information",
+    Cert: "NFA019.jpg"
+  },
+  {
+    "HARD-SOFT": "SOFTWARE",
     TECHNO: "ITIL",
     TYPE: "Attestation",
-    LANG: "Française", 
+    LANG: "Française",
     QUAND: "2019",
     ORG: "CNAM",
-    LIBELLE: "NFE 115",  
+    LIBELLE: "NFE 115",
     DESCRIPTION: "ITIL et Gestion SI",
     Cert: "Itil.jpg"
+  },
+  {
+    "HARD-SOFT": "SOFTWARE",
+    TECHNO: "C#",
+    TYPE: "Certificat",
+    LANG: "Française",
+    QUAND: "2019",
+    ORG: "SoloLearn",
+    LIBELLE: ".NET",
+    DESCRIPTION: "C# Course",
+    Cert: "CSHARP.PNG"
   },
   {
     "HARD-SOFT": "SOFTWARE",
