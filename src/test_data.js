@@ -131,5 +131,16 @@ export default [
     DESCRIPTION:
       "Utilise Python 3 comme clé pour vous ouvrir la porte de cette connaissance informatique.",
     Cert: "Python1.PNG"
+  },
+  {
+    "HARD-SOFT": "SOFTWARE",
+    TECHNO: "Python",
+    TYPE: "Attestation",
+    LANG: "Française",
+    QUAND: "2019",
+    ORG: "MOOC",
+    LIBELLE: "Python 3",
+    DESCRIPTION: "Python 3 : des fondamentaux aux concepts avancés du langage.",
+    Cert: "Python2.PNG"
   }
 ];
