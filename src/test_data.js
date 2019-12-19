@@ -122,6 +122,18 @@ export default [
   },
   {
     "HARD-SOFT": "SOFTWARE",
+    TECHNO: "Bash",
+    TYPE: "Attestation",
+    LANG: "Française",
+    QUAND: "2019",
+    ORG: "MOOC",
+    LIBELLE: "Maîtriser le shell Bash",
+    DESCRIPTION:
+      "shell intègre des structures qui en font un langage de programmation.",
+    Cert: "Bash.PNG"
+  },
+  {
+    "HARD-SOFT": "SOFTWARE",
     TECHNO: "Python",
     TYPE: "Attestation",
     LANG: "Française",
