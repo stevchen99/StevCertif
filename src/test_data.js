@@ -111,6 +111,17 @@ export default [
   },
   {
     "HARD-SOFT": "SOFTWARE",
+    TECHNO: "Java",
+    TYPE: "Certificat",
+    LANG: "Française",
+    QUAND: "2019",
+    ORG: "SoloLearn",
+    LIBELLE: "JAVA",
+    DESCRIPTION: "JAVA Course",
+    Cert: "SoloJava.PNG"
+  },
+  {
+    "HARD-SOFT": "SOFTWARE",
     TECHNO: "PHP",
     TYPE: "Certificat",
     LANG: "Française",
@@ -131,6 +142,18 @@ export default [
     DESCRIPTION:
       "shell intègre des structures qui en font un langage de programmation.",
     Cert: "Bash.PNG"
+  },
+  {
+    "HARD-SOFT": "SOFTWARE",
+    TECHNO: "Arduino",
+    TYPE: "Attestation",
+    LANG: "Française",
+    QUAND: "2019",
+    ORG: "MOOC",
+    LIBELLE: "Programmer un objet avec Arduino",
+    DESCRIPTION:
+      "initiation arduino.",
+    Cert: "Arduino.PNG"
   },
   {
     "HARD-SOFT": "SOFTWARE",
