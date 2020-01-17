@@ -144,7 +144,7 @@ export default [
     Cert: "Bash.PNG"
   },
   {
-    "HARD-SOFT": "SOFTWARE",
+    "HARD-SOFT": "HARDWARE",
     TECHNO: "Arduino",
     TYPE: "Attestation",
     LANG: "Française",
