@@ -1,6 +1,6 @@
 export default [
   {
-    "HARDSOFT": "HARDWARE",
+    HARDSOFT: "HARDWARE",
     TECHNO: "FPGA",
     TYPE: "Certificat",
     LANG: "Allemand",
@@ -11,7 +11,7 @@ export default [
     Cert: "ZMK.jpg"
   },
   {
-    "HARDSOFT": "SOFTWARE",
+    HARDSOFT: "SOFTWARE",
     TECHNO: "PHP",
     TYPE: "Attestation",
     LANG: "Allemande",
@@ -22,7 +22,7 @@ export default [
     Cert: "Cytexx.jpg"
   },
   {
-    "HARDSOFT": "SOFTWARE",
+    HARDSOFT: "SOFTWARE",
     TECHNO: "PHP",
     TYPE: "Attestation",
     LANG: "Allemande",
@@ -33,7 +33,7 @@ export default [
     Cert: "OnePlus.jpg"
   },
   {
-    "HARDSOFT": "SOFTWARE",
+    HARDSOFT: "SOFTWARE",
     TECHNO: "Generale",
     TYPE: "Certificat",
     LANG: "Française",
@@ -44,7 +44,7 @@ export default [
     Cert: "Compet.jpg"
   },
   {
-    "HARDSOFT": "SOFTWARE",
+    HARDSOFT: "SOFTWARE",
     TECHNO: "Java",
     TYPE: "Attestation",
     LANG: "Française",
@@ -55,7 +55,7 @@ export default [
     Cert: "NFA001.jpg"
   },
   {
-    "HARDSOFT": "SOFTWARE",
+    HARDSOFT: "SOFTWARE",
     TECHNO: "Java",
     TYPE: "Attestation",
     LANG: "Française",
@@ -66,7 +66,7 @@ export default [
     Cert: "NFA002.jpg"
   },
   {
-    "HARDSOFT": "SOFTWARE",
+    HARDSOFT: "SOFTWARE",
     TECHNO: "Java",
     TYPE: "Attestation",
     LANG: "Française",
@@ -77,7 +77,7 @@ export default [
     Cert: "NFA005.jpg"
   },
   {
-    "HARDSOFT": "SOFTWARE",
+    HARDSOFT: "SOFTWARE",
     TECHNO: "Java",
     TYPE: "Attestation",
     LANG: "Française",
@@ -88,7 +88,7 @@ export default [
     Cert: "NFA019.jpg"
   },
   {
-    "HARDSOFT": "SOFTWARE",
+    HARDSOFT: "SOFTWARE",
     TECHNO: "ITIL",
     TYPE: "Attestation",
     LANG: "Française",
@@ -99,7 +99,7 @@ export default [
     Cert: "Itil.jpg"
   },
   {
-    "HARDSOFT": "SOFTWARE",
+    HARDSOFT: "SOFTWARE",
     TECHNO: "C#",
     TYPE: "Certificat",
     LANG: "Française",
@@ -110,7 +110,7 @@ export default [
     Cert: "CSHARP.PNG"
   },
   {
-    "HARDSOFT": "SOFTWARE",
+    HARDSOFT: "SOFTWARE",
     TECHNO: "Java",
     TYPE: "Certificat",
     LANG: "Française",
@@ -121,7 +121,7 @@ export default [
     Cert: "SoloJava.PNG"
   },
   {
-    "HARDSOFT": "SOFTWARE",
+    HARDSOFT: "SOFTWARE",
     TECHNO: "PHP",
     TYPE: "Certificat",
     LANG: "Française",
@@ -132,7 +132,7 @@ export default [
     Cert: "PHPSolo.jpg"
   },
   {
-    "HARDSOFT": "SOFTWARE",
+    HARDSOFT: "SOFTWARE",
     TECHNO: "Bash",
     TYPE: "Attestation",
     LANG: "Française",
@@ -144,7 +144,7 @@ export default [
     Cert: "Bash.PNG"
   },
   {
-    "HARDSOFT": "HARDWARE",
+    HARDSOFT: "HARDWARE",
     TECHNO: "Arduino",
     TYPE: "Attestation",
     LANG: "Française",
@@ -156,7 +156,7 @@ export default [
     Cert: "Arduino.PNG"
   },
   {
-    "HARDSOFT": "SOFTWARE",
+    HARDSOFT: "SOFTWARE",
     TECHNO: "Python",
     TYPE: "Attestation",
     LANG: "Française",
@@ -168,7 +168,7 @@ export default [
     Cert: "Python1.PNG"
   },
   {
-    "HARDSOFT": "SOFTWARE",
+    HARDSOFT: "SOFTWARE",
     TECHNO: "Python",
     TYPE: "Attestation",
     LANG: "Française",

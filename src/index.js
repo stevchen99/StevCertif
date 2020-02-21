@@ -41,15 +41,20 @@ function getColumns(data) {
 }
 
 class App extends React.Component {
+  state = {
+    todos: []
+  }  
   constructor() {
-    super();
-    const data = getData();
+    super();   
+  
+    const data = getData() ;
     const columns = getColumns(data);
     this.state = {
       data,
       columns,
       visible: false
     };
+   
   }
 
   componentDidMount() {
@@ -58,8 +63,7 @@ class App extends React.Component {
     .then((data) => {
       this.setState({ todos: data })
       console.log(this.state.todos)
-    })
-    .catch(console.log)
+    })  
   }
 
   closeModal() {
