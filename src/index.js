@@ -52,6 +52,16 @@ class App extends React.Component {
     };
   }
 
+  componentDidMount() {
+    fetch('https://cwe1j.sse.codesandbox.io/difuse')
+    .then(res => res.json())
+    .then((data) => {
+      this.setState({ todos: data })
+      console.log(this.state.todos)
+    })
+    .catch(console.log)
+  }
+
   closeModal() {
     this.setState({
       visible: false
@@ -81,8 +91,8 @@ class App extends React.Component {
           //columns={columns}
           columns={[
             {
-              Header: "HARD-SOFT",
-              accessor: "HARD-SOFT",
+              Header: "HARDSOFT",
+              accessor: "HARDSOFT",
               width: 150
             },
             {
