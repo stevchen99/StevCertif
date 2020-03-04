@@ -4,66 +4,85 @@ import { render } from "react-dom";
 // Import React Table
 import ReactTable from "react-table";
 import "react-table/react-table.css";
-import testData from "./test_data";
+//import testData from "./test_data";
 import Modal from "react-awesome-modal";
 
-function getData() {
-  const data = testData.map(item => {
-    return {
-      ...item
-    };
-  });
-  return data;
-}
+// async function getDataExt() {
+//   try {
+//     let response = await fetch("https://cwe1j.sse.codesandbox.io/difuse");
+//     let dataExt = await response.json();
+//     //console.log(dataExt);
+//     return dataExt;
+//   } catch (error) {
+//     console.error(error);
+//   }
+// }
 
-function getColumns(data) {
-  const columns = [];
-  const sample = data[0];
-  Object.keys(sample).forEach(key => {
-    if (key !== "_id" && key !== "Cert") {
-      columns.push({
-        accessor: key,
-        Header: key
-      });
-    } else if (key === "Cert") {
-      columns.push({
-        accessor: key,
-        Header: key,
-        Cell: ({ row }) => (
-          <button onClick={e => this.handleButtonClick(e, row)}>
-            Click Me
-          </button>
-        )
-      });
-    }
-  });
-  return columns;
-}
+// function getData() {
+//   const data = testData.map(item => {
+//     return {
+//       ...item
+//     };
+//   });
+//   return data;
+// }
+
+// function getColumns(data) {
+//   const columns = [];
+//   const sample = data[0];
+
+//   //console.log("theSample" +  Object.keys(sample));
+
+//   Object.keys(sample).forEach(key => {
+//     if (key !== "_id" && key !== "Cert") {
+//       columns.push({
+//         accessor: key,
+//         Header: key
+//       });
+//     } else if (key === "Cert") {
+//       columns.push({
+//         accessor: key,
+//         Header: key,
+//         Cell: ({ row }) => (
+//           <button onClick={e => this.handleButtonClick(e, row)}>
+//             Click Me
+//           </button>
+//         )
+//       });
+//     }
+//   });
+//   return columns;
+// }
 
 class App extends React.Component {
-  state = {
-    todos: []
-  }  
-  constructor() {
-    super();   
   
-    const data = getData() ;
-    const columns = getColumns(data);
+  constructor() {
+    super();
+    //this.state = { isLoading: true };   
     this.state = {
-      data,
-      columns,
-      visible: false
-    };
+      dataExt: []
+  }
    
+      //const data = getData();  
+      //const data = this.state.dataExt;     
+     // console.log(data);
+     
+      //const columns = getColumns(data);
+      this.state = {      
+        visible: false
+      };    
   }
 
   componentDidMount() {
-    fetch('https://cwe1j.sse.codesandbox.io/difuse')
-    .then(res => res.json())
-    .then((data) => {
-      this.setState({ todos: data })
-      console.log(this.state.todos)
-    })  
+     fetch("https://cwe1j.sse.codesandbox.io/difuse")
+      .then(res => res.json())
+      .then((json) => {
+        this.setState({ data: json })
+        //console.log(this.state.dataExt)
+        //const data = this.state.data
+        //console.log(data) 
+        //const columns = getColumns(data);
+         })   
   }
 
   closeModal() {
@@ -85,7 +104,13 @@ class App extends React.Component {
       });
   };
 
+
+
   render() {
+
+   
+
+
     console.log({ state: this.state });
     const { data } = this.state;
     return (
