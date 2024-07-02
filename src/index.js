@@ -74,7 +74,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-     fetch("https://cwe1j.sse.codesandbox.io/difuse")
+     fetch("https://cwe1j-8080.csb.app/difuse")
       .then(res => res.json())
       .then((json) => {
         this.setState({ data: json })
