@@ -1,7 +1,6 @@
 FROM node:14
 WORKDIR /app
 COPY package*.json ./
-RUN npm i --package-lock-only
 RUN npm ci
 COPY . .
 RUN npm run build
