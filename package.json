@@ -8,7 +8,7 @@
     "react": "15.5.3",
     "react-awesome-modal": "2.0.5",
     "react-dom": "15.5.3",
-    "react-table": "6.7.5"
+    "react-table": "6.11.5"
   },
   "devDependencies": {
     "react-scripts": "1.0.0"
